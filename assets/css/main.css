@@ -145,7 +145,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #ef4565 !important;
+			color: #aca3f6 !important;
 		}
 
 	strong, b {
@@ -2036,8 +2036,8 @@ input, select, textarea {
 		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
-			border-bottom-color: #ef4565;
-			box-shadow: inset 0 -1px 0 0 #ef4565;
+			border-bottom-color: #aca3f6;
+			box-shadow: inset 0 -1px 0 0 #aca3f6;
 		}
 
 	select {
@@ -2141,8 +2141,8 @@ input, select, textarea {
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #ef4565;
-			box-shadow: 0 0 0 1px #ef4565;
+			border-color: #aca3f6;
+			box-shadow: 0 0 0 1px #aca3f6;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2361,8 +2361,8 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			color: #ef4565 !important;
-			box-shadow: inset 0 0 0 2px #ef4565;
+			color: #aca3f6 !important;
+			box-shadow: inset 0 0 0 2px #aca3f6;
 		}
 
 		input[type="submit"]:active,
@@ -2395,7 +2395,7 @@ input, select, textarea {
 		button.primary,
 		.button.primary {
 			box-shadow: none;
-			background-color: #ef4565;
+			background-color: #aca3f6;
 			color: #fffffe !important;
 		}
 
