@@ -110,7 +110,7 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea {
-		color: #4c545e;
+		color: #444444;
 		font-family: "Lexend", sans-serif;
 		font-size: 16pt;
 		font-weight: 300;
@@ -139,8 +139,8 @@ input, select, textarea {
 		-ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		text-decoration: none;
-		color: #4c545e;
-		border-bottom: dotted 1px #4c545e;
+		color: #444444;
+		border-bottom: dotted 1px #444444;
 	}
 
 		a:hover {
@@ -275,7 +275,7 @@ input, select, textarea {
 
 	hr {
 		border: 0;
-		border-bottom: solid 1px #4c545e;
+		border-bottom: solid 1px #444444;
 		margin: 2em 0;
 	}
 
@@ -2012,7 +2012,7 @@ input, select, textarea {
 		background-color: transparent;
 		border: none;
 		border-radius: 0;
-		border-bottom: solid 1px #4c545e;
+		border-bottom: solid 1px #444444;
 		color: inherit;
 		display: block;
 		outline: 0;
@@ -2091,7 +2091,7 @@ input, select, textarea {
 		input[type="checkbox"] + label,
 		input[type="radio"] + label {
 			text-decoration: none;
-			color: #4c545e;
+			color: #444444;
 			cursor: pointer;
 			display: inline-block;
 			font-size: 1em;
@@ -2118,7 +2118,7 @@ input, select, textarea {
 			input[type="checkbox"] + label:before,
 			input[type="radio"] + label:before {
 				border-radius: 4px;
-				border: solid 1px #4c545e;
+				border: solid 1px #444444;
 				content: '';
 				display: inline-block;
 				font-size: 0.8em;
@@ -2370,7 +2370,7 @@ input, select, textarea {
 		input[type="button"]:active,
 		button:active,
 		.button:active {
-			background-color: #094067;
+			background-color: #F5E892;
 		}
 
 		input[type="submit"].small,
@@ -2404,7 +2404,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #872235;
+				background-color: #514a8c;
 			}
 
 			input[type="submit"].primary:active,
@@ -2412,7 +2412,7 @@ input, select, textarea {
 			input[type="button"].primary:active,
 			button.primary:active,
 			.button.primary:active {
-				background-color: #872235;
+				background-color: #514a8c;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -2766,7 +2766,7 @@ input, select, textarea {
 				margin-top: 5em;
 				list-style: none;
 				font-size: 0.8em;
-				color: #4c545e;
+				color: #444444;
 			}
 
 				#footer > .inner .copyright a {
@@ -2775,7 +2775,7 @@ input, select, textarea {
 
 				#footer > .inner .copyright li {
 					display: inline-block;
-					border-left: solid 1px #4c545e;
+					border-left: solid 1px #444444;
 					line-height: 1;
 					padding: 0 0 0 1em;
 					margin: 0 0 0 1em;
