@@ -1,4 +1,4 @@
-# Henrik Haa - Portfolio Website
+# Bugberry Dev - Portfolio Website
 
 A professional portfolio website showcasing skills, experience, and projects in software development, game development, and 3D asset creation.
 

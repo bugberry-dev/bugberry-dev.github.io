@@ -440,14 +440,14 @@ nav a:hover {
 .hero-subtitle {
 	font-size: 1.5rem;
 	font-weight: 500;
-	margin-bottom: 1.5rem;
+	margin: 1em 2em 1.5rem 1em;
 	opacity: 0.9;
 }
 
 .hero-description {
 	font-size: 1.1rem;
 	max-width: 800px;
-	margin: 0 auto 2rem;
+	margin: 1em 2em 2rem 1em;
 	line-height: 1.6;
 	opacity: 0.95;
 }
@@ -1051,4 +1051,26 @@ body.is-touch .tiles article .content {
 	0% { opacity: 1; }
 	50% { opacity: 0.5; }
 	100% { opacity: 1; }
+}
+
+/* ===== MOBILE HEADER/NAV LAYOUT ===== */
+@media screen and (max-width: 600px) {
+	#header .inner {
+		flex-direction: column;
+		align-items: center;
+		gap: 0.5rem;
+	}
+	#header .logo {
+		justify-content: center;
+		width: 100%;
+		text-align: center;
+	}
+	#header .logo .symbol img {
+		display: block;
+		margin: 0 auto;
+		height: 4em;
+	}
+	#header nav {
+		display: none;
+	}
 }
