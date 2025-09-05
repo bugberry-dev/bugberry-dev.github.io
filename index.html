@@ -4,10 +4,9 @@
 		<title>Tiny Teacup &middot; Game Developer</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/main.css" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap">
 		<link rel="icon" href="images/favicon.png" type="image/x-icon" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
 	</head>
 	<body class="is-preload">
 		<div id="wrapper">
@@ -32,13 +31,13 @@
 					<section id="hero" class="hero-section">
 						<div class="hero-content">
 							<h1>Hi there, I'm Tiny Teacup!</h1>
-							<p class="hero-subtitle">Video Game & Game Asset Creator</p>
+							<p class="hero-subtitle">Video Game & Asset Creator</p>
 							<p class="hero-description">
 								I focus on creating small games and high quality game assets that bring digital worlds to life.
 							</p>
 							<div class="hero-actions">
-								<a href="#portfolio" class="button primary">View My Work</a>
-								<a href="#contact" class="button secondary">Get In Touch</a>
+								<a href="#portfolio" class="button-primary">View My Work</a>
+								<a href="#contact" class="button-secondary">Get In Touch</a>
 							</div>
 						</div>
 					</section>
@@ -51,8 +50,7 @@
 						<div class="portfolio-intro">
 							<p>
 								Here's a selection of my recent work, showcasing my skills in game development
-								and game asset design. Each project represents a unique challenge and 
-								demonstrates different aspects of my technical capabilities.
+								and game asset design. Feel free to explore!
 							</p>
 						</div>
 						<section class="tiles">
@@ -61,7 +59,9 @@
 									<img src="images/image1.png" alt="3D Military Airport Environment" />
 								</span>
 								<div class="portfolio-content">
-									<h3>3D Military Airport Environment Pack</h3>
+									<a href="https://tiny-teacup-studio.itch.io/3d-military-airport-environment-pack">
+										<h3>3D Military Airport Environment Pack</h3>
+									</a>
 									<div class="content">
 										<p>
 											A comprehensive collection of low-poly 3D models for creating 
@@ -80,10 +80,12 @@
 									<img src="images/image2.png" alt="Stylish 3D Character Pack" />
 								</span>
 								<div class="portfolio-content">
-									<h3>Stylish 3D Character Pack</h3>
+									<a href="https://tiny-teacup-studio.itch.io/stylish-3d-characters">
+										<h3>Stylish 3D Character Pack</h3>
+									</a>
 									<div class="content">
 										<p>
-											Small pack of stylized 3D characters with ready-to-use animations, 
+											A small pack of stylized 3D characters with ready-to-use animations, 
 											perfect for indie games.
 										</p>
 										<div class="portfolio-details">
@@ -129,16 +131,6 @@
 									Whether you have a question about my work, have and idea for a project, 
 									or just want to say hello, feel free to reach out!
 								</p>
-								<div class="contact-methods">
-									<div class="contact-method">
-										<span class="icon"></span>
-										<span><a href="mailto:tinyteacup.studio@gmail.com">Email</a></span>
-									</div>
-									<div class="contact-method">
-										<span class="icon"></span>
-										<span><a href="https://github.com/tiny-teacup">GitHub</a></span>
-									</div>
-								</div>
 							</div>
 							<form id="contactForm" class="contact-form">
 								<div class="fields">
@@ -160,8 +152,8 @@
 									</div>
 								</div>
 								<div class="actions">
-									<button type="submit" class="button primary">Send</button>
-									<button type="reset" class="button secondary">Clear</button>
+									<button type="submit" class="button-primary">Send</button>
+									<button type="reset" class="button-secondary">Clear</button>
 								</div>
 								<div id="formStatus" class="form-status"></div>
 							</form>
@@ -172,13 +164,7 @@
 					</div>
 				</div>
 			</footer>
-		</div>
-		
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-		<script src="assets/js/sendmail.js"></script>
+		</div>		
 	</body>
+	<script src="assets/sendmail.js"></script>
 </html>
