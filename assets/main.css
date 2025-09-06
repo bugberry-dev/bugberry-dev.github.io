@@ -241,7 +241,6 @@ h5, h6 {
 }
 
 .logo h1 {
-	font-size: 1.25rem;
 	font-weight: 600;
 	color: var(--color-text-primary);
 	margin: 0;
@@ -321,13 +320,13 @@ nav a:hover {
 }
 
 .hero-content h1 {
-	font-size: 2.5rem;
+	font-size: 2.5em;
 	font-weight: 600;
 	margin-bottom: 1rem;
 }
 
 .hero-subtitle {
-	font-size: 1.5rem;
+	font-size: 1.5em;
 	font-weight: 500;
 	margin: 1em 2em 1.5rem 1em;
 	opacity: 0.9;
@@ -361,7 +360,7 @@ nav a:hover {
 }
 
 .section-header h2 {
-	font-size: 2.5rem;
+	font-size: 2.5em;
 	font-weight: 600;
 	color: var(--color-text-primary);
 	margin-bottom: 1rem;
