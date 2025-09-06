@@ -36,7 +36,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 // Open email client after a short delay
                 setTimeout(() => {
-                    window.location.href = mailtoLink;
+                    // Try to open the email client
+                    try {
+                        window.location.href = mailtoLink;
+                        console.log('Attempting to open email client...'); // Debug log
+                    } catch (error) {
+                        console.error('Error opening email client:', error);
+                        showFormStatus('error', 'Error opening email client. Please try again.');
+                    }
                 }, 1500);
                 
                 // Reset form after successful submission
@@ -89,17 +96,11 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Compose mailto link with better formatting
     function composeMailtoLink(data) {
-        const emailBody = `Hello Bugberry Dev,
-
-I'm reaching out regarding: ${data.subject}
-
-${data.message}
-
-Best regards,
-${data.name}
-${data.email}`;
+        const emailBody = `Hello Tiny Teacup,\n\nI'm reaching out regarding: ${data.subject}\n\n${data.message}\n\nBest regards,\n${data.name}\n${data.email}`;
         
-        return `mailto:bugberry.dev@gmail.com?subject=${encodeURIComponent(data.subject)}&body=${encodeURIComponent(emailBody)}`;
+        const mailtoLink = `mailto:tinyteacup.studio@gmail.com?subject=${encodeURIComponent(data.subject)}&body=${encodeURIComponent(emailBody)}`;
+        console.log('Generated mailto link:', mailtoLink); // Debug log
+        return mailtoLink;
     }
     
     // Show form status message
@@ -159,16 +160,14 @@ ${data.email}`;
     
     // Show field error
     function showFieldError(field, message) {
-        field.style.borderColor = '#dc3545';
+        field.style.borderBottomColor = '#ff6b6b';
+        field.style.boxShadow = 'inset 0 -1px 0 0 #ff6b6b';
         
         // Create error message element
         let errorElement = field.parentNode.querySelector('.field-error');
         if (!errorElement) {
             errorElement = document.createElement('div');
             errorElement.className = 'field-error';
-            errorElement.style.color = '#dc3545';
-            errorElement.style.fontSize = '0.875rem';
-            errorElement.style.marginTop = '0.25rem';
             field.parentNode.appendChild(errorElement);
         }
         
@@ -177,7 +176,8 @@ ${data.email}`;
     
     // Clear field error
     function clearFieldError(field) {
-        field.style.borderColor = '#e9ecef';
+        field.style.borderBottomColor = 'var(--color-border-dark)';
+        field.style.boxShadow = 'none';
         
         const errorElement = field.parentNode.querySelector('.field-error');
         if (errorElement) {

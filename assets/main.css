@@ -11,10 +11,10 @@
 	
 	/* Background Colors */
 	--color-bg-main: #2a2a2a;
-	--color-bg-header: #1b1b1b;
+	--color-bg-header: #212121;
 	--color-bg-card: #333333;
 	--color-bg-form: #2a2a2a;
-	--color-bg-footer: #1b1b1b;
+	--color-bg-footer: #212121;
 	
 	/* Text Colors */
 	--color-text-primary: #fffffe;
@@ -520,8 +520,8 @@ nav a:hover {
 /* ===== PROJECT TILES ===== */
 .tiles {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: 2rem;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.5rem;
 	margin: 2rem 0;
 }
 
@@ -858,32 +858,33 @@ textarea {
 	padding: 1rem;
 	border-radius: 6px;
 	display: none;
+	background: var(--color-bg-card);
 }
 
 .form-status.success {
-	background: #d4edda;
-	color: #155724;
-	border: 1px solid #c3e6cb;
+	background: rgba(239, 203, 104, 0.15);
+	color: var(--color-primary);
+	border: 1px solid rgba(239, 203, 104, 0.3);
 	display: block;
 }
 
 .form-status.error {
-	background: #f8d7da;
-	color: #721c24;
-	border: 1px solid #f5c6cb;
+	background: rgba(220, 53, 69, 0.15);
+	color: #ff6b6b;
+	border: 1px solid rgba(220, 53, 69, 0.3);
 	display: block;
 }
 
 .form-status.info {
-	background: #d1ecf1;
-	color: #0c5460;
-	border: 1px solid #bee5eb;
+	background: rgba(225, 239, 230, 0.15);
+	color: var(--color-secondary);
+	border: 1px solid rgba(225, 239, 230, 0.3);
 	display: block;
 	animation: pulse 2s infinite;
 }
 
 .field-error {
-	color: #dc3545;
+	color: #ff6b6b;
 	font-size: 0.875rem;
 	margin-top: 0.25rem;
 	display: block;
@@ -966,6 +967,13 @@ textarea {
 }
 
 /* Responsive tiles */
+@media screen and (max-width: 1200px) {
+	.tiles {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1.5rem;
+	}
+}
+
 @media screen and (max-width: 768px) {
 	.tiles {
 		grid-template-columns: 1fr;
