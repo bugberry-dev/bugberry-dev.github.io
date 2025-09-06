@@ -339,6 +339,7 @@ nav a:hover {
 	margin: 1em 2em 2rem 1em;
 	line-height: 1.6;
 	opacity: 0.95;
+	text-align: center;
 }
 
 .hero-actions {
